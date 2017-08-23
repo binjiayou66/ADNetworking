@@ -1,0 +1,436 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C011ACE07E4188DCA10DC01 /* libPods-ADNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E3A7D3AC8BFCB3C38EFF97 /* libPods-ADNetworking.a */; };
+		A17111CC1F4D54CD00C420B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111CB1F4D54CD00C420B1 /* main.m */; };
+		A17111CF1F4D54CD00C420B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111CE1F4D54CD00C420B1 /* AppDelegate.m */; };
+		A17111D21F4D54CD00C420B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111D11F4D54CD00C420B1 /* ViewController.m */; };
+		A17111D51F4D54CD00C420B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17111D31F4D54CD00C420B1 /* Main.storyboard */; };
+		A17111D71F4D54CD00C420B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A17111D61F4D54CD00C420B1 /* Assets.xcassets */; };
+		A17111DA1F4D54CD00C420B1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A17111D81F4D54CD00C420B1 /* LaunchScreen.storyboard */; };
+		A17111E41F4D561300C420B1 /* ADHttpBaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111E31F4D561300C420B1 /* ADHttpBaseApi.m */; };
+		A17111E71F4D565600C420B1 /* ADNetworkingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111E61F4D565600C420B1 /* ADNetworkingProxy.m */; };
+		A17111EA1F4D56CB00C420B1 /* ADURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111E91F4D56CB00C420B1 /* ADURLResponse.m */; };
+		A17111ED1F4D57D800C420B1 /* ADURLRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111EC1F4D57D800C420B1 /* ADURLRequestGenerator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E50FC52CFD3B3EA49A68347 /* Pods-ADNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADNetworking/Pods-ADNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		A17111C71F4D54CD00C420B1 /* ADNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A17111CB1F4D54CD00C420B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A17111CD1F4D54CD00C420B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A17111CE1F4D54CD00C420B1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A17111D01F4D54CD00C420B1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A17111D11F4D54CD00C420B1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A17111D41F4D54CD00C420B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A17111D61F4D54CD00C420B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A17111D91F4D54CD00C420B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A17111DB1F4D54CD00C420B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A17111E21F4D561300C420B1 /* ADHttpBaseApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADHttpBaseApi.h; sourceTree = "<group>"; };
+		A17111E31F4D561300C420B1 /* ADHttpBaseApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADHttpBaseApi.m; sourceTree = "<group>"; };
+		A17111E51F4D565600C420B1 /* ADNetworkingProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADNetworkingProxy.h; sourceTree = "<group>"; };
+		A17111E61F4D565600C420B1 /* ADNetworkingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNetworkingProxy.m; sourceTree = "<group>"; };
+		A17111E81F4D56CB00C420B1 /* ADURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADURLResponse.h; sourceTree = "<group>"; };
+		A17111E91F4D56CB00C420B1 /* ADURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADURLResponse.m; sourceTree = "<group>"; };
+		A17111EB1F4D57D800C420B1 /* ADURLRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADURLRequestGenerator.h; sourceTree = "<group>"; };
+		A17111EC1F4D57D800C420B1 /* ADURLRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADURLRequestGenerator.m; sourceTree = "<group>"; };
+		B7461A375FC56809F7B2F150 /* Pods-ADNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADNetworking/Pods-ADNetworking.debug.xcconfig"; sourceTree = "<group>"; };
+		F2E3A7D3AC8BFCB3C38EFF97 /* libPods-ADNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ADNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A17111C41F4D54CD00C420B1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C011ACE07E4188DCA10DC01 /* libPods-ADNetworking.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18FD2F1B4A4A51E9993797FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7461A375FC56809F7B2F150 /* Pods-ADNetworking.debug.xcconfig */,
+				2E50FC52CFD3B3EA49A68347 /* Pods-ADNetworking.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		1D99BFD664135A9EF35B0CA9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2E3A7D3AC8BFCB3C38EFF97 /* libPods-ADNetworking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A17111BE1F4D54CD00C420B1 = {
+			isa = PBXGroup;
+			children = (
+				A17111C91F4D54CD00C420B1 /* ADNetworking */,
+				A17111C81F4D54CD00C420B1 /* Products */,
+				18FD2F1B4A4A51E9993797FE /* Pods */,
+				1D99BFD664135A9EF35B0CA9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A17111C81F4D54CD00C420B1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A17111C71F4D54CD00C420B1 /* ADNetworking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A17111C91F4D54CD00C420B1 /* ADNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A17111E11F4D554200C420B1 /* ADNetworking */,
+				A17111CD1F4D54CD00C420B1 /* AppDelegate.h */,
+				A17111CE1F4D54CD00C420B1 /* AppDelegate.m */,
+				A17111D01F4D54CD00C420B1 /* ViewController.h */,
+				A17111D11F4D54CD00C420B1 /* ViewController.m */,
+				A17111D31F4D54CD00C420B1 /* Main.storyboard */,
+				A17111D61F4D54CD00C420B1 /* Assets.xcassets */,
+				A17111D81F4D54CD00C420B1 /* LaunchScreen.storyboard */,
+				A17111DB1F4D54CD00C420B1 /* Info.plist */,
+				A17111CA1F4D54CD00C420B1 /* Supporting Files */,
+			);
+			path = ADNetworking;
+			sourceTree = "<group>";
+		};
+		A17111CA1F4D54CD00C420B1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A17111CB1F4D54CD00C420B1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A17111E11F4D554200C420B1 /* ADNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A17111E21F4D561300C420B1 /* ADHttpBaseApi.h */,
+				A17111E31F4D561300C420B1 /* ADHttpBaseApi.m */,
+				A17111E51F4D565600C420B1 /* ADNetworkingProxy.h */,
+				A17111E61F4D565600C420B1 /* ADNetworkingProxy.m */,
+				A17111E81F4D56CB00C420B1 /* ADURLResponse.h */,
+				A17111E91F4D56CB00C420B1 /* ADURLResponse.m */,
+				A17111EB1F4D57D800C420B1 /* ADURLRequestGenerator.h */,
+				A17111EC1F4D57D800C420B1 /* ADURLRequestGenerator.m */,
+			);
+			path = ADNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A17111C61F4D54CD00C420B1 /* ADNetworking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A17111DE1F4D54CD00C420B1 /* Build configuration list for PBXNativeTarget "ADNetworking" */;
+			buildPhases = (
+				4646DF525AD9336EE4AD8653 /* [CP] Check Pods Manifest.lock */,
+				A17111C31F4D54CD00C420B1 /* Sources */,
+				A17111C41F4D54CD00C420B1 /* Frameworks */,
+				A17111C51F4D54CD00C420B1 /* Resources */,
+				32B74E227E527AF9C2969294 /* [CP] Embed Pods Frameworks */,
+				B70681EDCDE1C6A5AF31A6FD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ADNetworking;
+			productName = ADNetworking;
+			productReference = A17111C71F4D54CD00C420B1 /* ADNetworking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A17111BF1F4D54CD00C420B1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Andy;
+				TargetAttributes = {
+					A17111C61F4D54CD00C420B1 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = T58F77STV4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A17111C21F4D54CD00C420B1 /* Build configuration list for PBXProject "ADNetworking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A17111BE1F4D54CD00C420B1;
+			productRefGroup = A17111C81F4D54CD00C420B1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A17111C61F4D54CD00C420B1 /* ADNetworking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A17111C51F4D54CD00C420B1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17111DA1F4D54CD00C420B1 /* LaunchScreen.storyboard in Resources */,
+				A17111D71F4D54CD00C420B1 /* Assets.xcassets in Resources */,
+				A17111D51F4D54CD00C420B1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32B74E227E527AF9C2969294 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADNetworking/Pods-ADNetworking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4646DF525AD9336EE4AD8653 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ADNetworking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B70681EDCDE1C6A5AF31A6FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ADNetworking/Pods-ADNetworking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A17111C31F4D54CD00C420B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A17111E41F4D561300C420B1 /* ADHttpBaseApi.m in Sources */,
+				A17111E71F4D565600C420B1 /* ADNetworkingProxy.m in Sources */,
+				A17111D21F4D54CD00C420B1 /* ViewController.m in Sources */,
+				A17111CF1F4D54CD00C420B1 /* AppDelegate.m in Sources */,
+				A17111CC1F4D54CD00C420B1 /* main.m in Sources */,
+				A17111ED1F4D57D800C420B1 /* ADURLRequestGenerator.m in Sources */,
+				A17111EA1F4D56CB00C420B1 /* ADURLResponse.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A17111D31F4D54CD00C420B1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17111D41F4D54CD00C420B1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A17111D81F4D54CD00C420B1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A17111D91F4D54CD00C420B1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A17111DC1F4D54CD00C420B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A17111DD1F4D54CD00C420B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A17111DF1F4D54CD00C420B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7461A375FC56809F7B2F150 /* Pods-ADNetworking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T58F77STV4;
+				INFOPLIST_FILE = ADNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.andy1991.www.ADNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A17111E01F4D54CD00C420B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E50FC52CFD3B3EA49A68347 /* Pods-ADNetworking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = T58F77STV4;
+				INFOPLIST_FILE = ADNetworking/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.andy1991.www.ADNetworking;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A17111C21F4D54CD00C420B1 /* Build configuration list for PBXProject "ADNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17111DC1F4D54CD00C420B1 /* Debug */,
+				A17111DD1F4D54CD00C420B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A17111DE1F4D54CD00C420B1 /* Build configuration list for PBXNativeTarget "ADNetworking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A17111DF1F4D54CD00C420B1 /* Debug */,
+				A17111E01F4D54CD00C420B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A17111BF1F4D54CD00C420B1 /* Project object */;
+}
