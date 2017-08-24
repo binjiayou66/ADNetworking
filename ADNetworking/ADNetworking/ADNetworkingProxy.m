@@ -8,12 +8,14 @@
 
 #import "ADNetworkingProxy.h"
 #import <AFHTTPSessionManager.h>
+#import <AFURLRequestSerialization.h>
 
 @interface ADNetworkingProxy ()
 
 @property (nonatomic, assign) NSUInteger requestID;
 @property (nonatomic, strong) AFHTTPSessionManager *sessionManager;
 @property (nonatomic, strong) NSMutableDictionary *taskDict;
+@property (nonatomic, strong) NSArray *requestMethodArray;
 
 @end
 
@@ -34,8 +36,7 @@
 - (NSUInteger)loadDataWithApi:(ADHttpBaseApi *)api success:(void (^)(ADURLResponse * response))success failure:(void (^)(ADURLResponse * response))failure
 {
     NSUInteger requestID = [self generateRequestID];
-#warning generate request
-    NSURLRequest *request = nil;
+    NSURLRequest *request = [self generateDataRequestWithApi:api];
     __weak typeof(self) weakSelf = self;
     NSURLSessionDataTask *task = [self.sessionManager dataTaskWithRequest:request completionHandler:^(NSURLResponse * _Nonnull response, id  _Nullable responseObject, NSError * _Nullable error) {
         __strong ADNetworkingProxy *strongSelf = weakSelf;
@@ -95,6 +96,26 @@
     return ++self.requestID;
 }
 
+- (NSURLRequest *)generateDataRequestWithApi:(ADHttpBaseApi *)api
+{
+    // Request基本配置，url、method、parameters
+    NSAssert([api requestHost].length > 0, @"请配置网络请求主机地址");
+    NSString *urlString = [NSString stringWithFormat:@"%@%@", [api requestHost], [api uri]];
+    NSDictionary *params = [api parameters];
+    NSString *method = self.requestMethodArray[[api requestMethod]];
+    NSMutableURLRequest *request = [[AFHTTPRequestSerializer serializer] requestWithMethod:method URLString:urlString parameters:params error:nil];
+    // Request高级配置，token、header参数
+    NSString *localToken = [[NSUserDefaults standardUserDefaults] objectForKey:@"RequestToken"];
+    NSString *token = [api respondsToSelector:@selector(requestToken)] ? [api requestToken] : ([localToken length] > 0 ? localToken : @"anonymous");
+    [request setValue:token forHTTPHeaderField:@"Request-Token"];
+    [request setValue:[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"] forHTTPHeaderField:@"App-Version"];
+    // 请求超时时长
+    NSTimeInterval timeout = [api requestTimeOutInterval];
+    [request setTimeoutInterval:timeout];
+    
+    return request;
+}
+
 - (void)successWithRequestID:(NSUInteger)requestID responseData:(NSData *)data success:(ADRequestCallBack)success
 {
     // 移除记录
@@ -137,6 +158,14 @@
         _taskDict = [[NSMutableDictionary alloc] init];
     }
     return _taskDict;
+}
+
+- (NSArray *)requestMethodArray
+{
+    if (!_requestMethodArray) {
+        _requestMethodArray = [[NSArray alloc] initWithObjects:@"GET", @"POST", @"PUT", @"DELETE", nil];
+    }
+    return _requestMethodArray;
 }
 
 @end

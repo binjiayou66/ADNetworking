@@ -17,7 +17,6 @@
 		A17111E41F4D561300C420B1 /* ADHttpBaseApi.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111E31F4D561300C420B1 /* ADHttpBaseApi.m */; };
 		A17111E71F4D565600C420B1 /* ADNetworkingProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111E61F4D565600C420B1 /* ADNetworkingProxy.m */; };
 		A17111EA1F4D56CB00C420B1 /* ADURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111E91F4D56CB00C420B1 /* ADURLResponse.m */; };
-		A17111ED1F4D57D800C420B1 /* ADURLRequestGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111EC1F4D57D800C420B1 /* ADURLRequestGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +37,6 @@
 		A17111E61F4D565600C420B1 /* ADNetworkingProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADNetworkingProxy.m; sourceTree = "<group>"; };
 		A17111E81F4D56CB00C420B1 /* ADURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADURLResponse.h; sourceTree = "<group>"; };
 		A17111E91F4D56CB00C420B1 /* ADURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADURLResponse.m; sourceTree = "<group>"; };
-		A17111EB1F4D57D800C420B1 /* ADURLRequestGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADURLRequestGenerator.h; sourceTree = "<group>"; };
-		A17111EC1F4D57D800C420B1 /* ADURLRequestGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADURLRequestGenerator.m; sourceTree = "<group>"; };
 		B7461A375FC56809F7B2F150 /* Pods-ADNetworking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNetworking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ADNetworking/Pods-ADNetworking.debug.xcconfig"; sourceTree = "<group>"; };
 		F2E3A7D3AC8BFCB3C38EFF97 /* libPods-ADNetworking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ADNetworking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,6 +70,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A16992AA1F4EDA60005981F6 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
 		A17111BE1F4D54CD00C420B1 = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +98,7 @@
 		A17111C91F4D54CD00C420B1 /* ADNetworking */ = {
 			isa = PBXGroup;
 			children = (
+				A16992AA1F4EDA60005981F6 /* Demo */,
 				A17111E11F4D554200C420B1 /* ADNetworking */,
 				A17111CD1F4D54CD00C420B1 /* AppDelegate.h */,
 				A17111CE1F4D54CD00C420B1 /* AppDelegate.m */,
@@ -125,8 +130,6 @@
 				A17111E61F4D565600C420B1 /* ADNetworkingProxy.m */,
 				A17111E81F4D56CB00C420B1 /* ADURLResponse.h */,
 				A17111E91F4D56CB00C420B1 /* ADURLResponse.m */,
-				A17111EB1F4D57D800C420B1 /* ADURLRequestGenerator.h */,
-				A17111EC1F4D57D800C420B1 /* ADURLRequestGenerator.m */,
 			);
 			path = ADNetworking;
 			sourceTree = "<group>";
@@ -262,7 +265,6 @@
 				A17111D21F4D54CD00C420B1 /* ViewController.m in Sources */,
 				A17111CF1F4D54CD00C420B1 /* AppDelegate.m in Sources */,
 				A17111CC1F4D54CD00C420B1 /* main.m in Sources */,
-				A17111ED1F4D57D800C420B1 /* ADURLRequestGenerator.m in Sources */,
 				A17111EA1F4D56CB00C420B1 /* ADURLResponse.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

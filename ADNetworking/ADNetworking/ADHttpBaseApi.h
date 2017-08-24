@@ -72,15 +72,13 @@ typedef NS_ENUM(NSUInteger, ADHttpRequestErrorType) {
 
 @optional
 // 请求方法：GET，POST
-- (NSUInteger)requestType;
+- (ADHttpRequestType)requestMethod;
 // host
 - (NSString *)requestHost;
 // 请求时间
-- (NSTimeInterval)requestTime;
+- (NSTimeInterval)requestTimeOutInterval;
 // token
 - (NSString *)requestToken;
-// 公共参数
-- (NSDictionary *)requestPublicParam;
 // 上传文件内容
 - (NSDictionary *)uploadContentData;
 // 上传文件名称
@@ -95,7 +93,7 @@ typedef NS_ENUM(NSUInteger, ADHttpRequestErrorType) {
 /**
  ADHttpBaseApi
  */
-@interface ADHttpBaseApi : NSObject
+@interface ADHttpBaseApi : NSObject <ADHttpBaseApiDataSource>
 
 @property (nonatomic, assign) NSUInteger requestID;
 @property (nonatomic, strong) id responseData;

@@ -25,6 +25,15 @@
     [self cancel];
 }
 
+#pragma mark - ADHttpBaseApiDataSource
+
+- (NSDictionary *)parameters { return @{}; }
+- (NSString *)uri { return @""; }
+// 此处可配置默认host
+- (NSString *)requestHost { return @""; }
+- (ADHttpRequestType)requestMethod { return ADHttpRequestTypePost; }
+- (NSTimeInterval)requestTimeOutInterval { return 15; }
+
 #pragma mark - public method
 
 - (void)loadData
