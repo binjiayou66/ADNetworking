@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0C011ACE07E4188DCA10DC01 /* libPods-ADNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E3A7D3AC8BFCB3C38EFF97 /* libPods-ADNetworking.a */; };
+		A10FEA1B1F4FBAFA001C5675 /* BaiDuApi.m in Sources */ = {isa = PBXBuildFile; fileRef = A10FEA1A1F4FBAFA001C5675 /* BaiDuApi.m */; };
+		A10FEA1E1F4FBBCC001C5675 /* BaiduApiProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = A10FEA1D1F4FBBCC001C5675 /* BaiduApiProcessor.m */; };
 		A17111CC1F4D54CD00C420B1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111CB1F4D54CD00C420B1 /* main.m */; };
 		A17111CF1F4D54CD00C420B1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111CE1F4D54CD00C420B1 /* AppDelegate.m */; };
 		A17111D21F4D54CD00C420B1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A17111D11F4D54CD00C420B1 /* ViewController.m */; };
@@ -21,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		2E50FC52CFD3B3EA49A68347 /* Pods-ADNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ADNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-ADNetworking/Pods-ADNetworking.release.xcconfig"; sourceTree = "<group>"; };
+		A10FEA191F4FBAFA001C5675 /* BaiDuApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiDuApi.h; sourceTree = "<group>"; };
+		A10FEA1A1F4FBAFA001C5675 /* BaiDuApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiDuApi.m; sourceTree = "<group>"; };
+		A10FEA1C1F4FBBCC001C5675 /* BaiduApiProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaiduApiProcessor.h; sourceTree = "<group>"; };
+		A10FEA1D1F4FBBCC001C5675 /* BaiduApiProcessor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaiduApiProcessor.m; sourceTree = "<group>"; };
 		A17111C71F4D54CD00C420B1 /* ADNetworking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADNetworking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A17111CB1F4D54CD00C420B1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A17111CD1F4D54CD00C420B1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +79,10 @@
 		A16992AA1F4EDA60005981F6 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				A10FEA191F4FBAFA001C5675 /* BaiDuApi.h */,
+				A10FEA1A1F4FBAFA001C5675 /* BaiDuApi.m */,
+				A10FEA1C1F4FBBCC001C5675 /* BaiduApiProcessor.h */,
+				A10FEA1D1F4FBBCC001C5675 /* BaiduApiProcessor.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -260,10 +270,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A10FEA1B1F4FBAFA001C5675 /* BaiDuApi.m in Sources */,
 				A17111E41F4D561300C420B1 /* ADHttpBaseApi.m in Sources */,
 				A17111E71F4D565600C420B1 /* ADNetworkingProxy.m in Sources */,
 				A17111D21F4D54CD00C420B1 /* ViewController.m in Sources */,
 				A17111CF1F4D54CD00C420B1 /* AppDelegate.m in Sources */,
+				A10FEA1E1F4FBBCC001C5675 /* BaiduApiProcessor.m in Sources */,
 				A17111CC1F4D54CD00C420B1 /* main.m in Sources */,
 				A17111EA1F4D56CB00C420B1 /* ADURLResponse.m in Sources */,
 			);
@@ -389,6 +401,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T58F77STV4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = ADNetworking/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -403,6 +416,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = T58F77STV4;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				INFOPLIST_FILE = ADNetworking/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

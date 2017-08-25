@@ -7,8 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "BaiDuApi.h"
+#import "BaiduApiProcessor.h"
+#import <objc/runtime.h>
+#import <objc/message.h>
 
-@interface ViewController ()
+@interface ViewController ()<ADHttpBaseApiCallBackDelegate>
+
+@property (nonatomic, strong) BaiDuApi *api;
+@property (nonatomic, strong) BaiduApiProcessor *processor;
 
 @end
 
@@ -17,6 +24,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.api = [[BaiDuApi alloc] init];
+    self.api.delegate = self;
+    [self.api loadData];
+    self.processor = [[BaiduApiProcessor alloc] init];
+    
+//    unsigned int i = 0;
+//    Method *methodList = class_copyMethodList(objc_getMetaClass("Animal"), &i);
+//    for (int j = 0; j < i; j++) {
+//        NSLog(@"----%@", NSStringFromSelector(method_getName(methodList[j])));
+//    }
+}
+
+- (void)apiRequestCallbackDidSuccess:(ADHttpBaseApi *)api
+{
+    [api processDataWithProcessor:self.processor];
 }
 
 

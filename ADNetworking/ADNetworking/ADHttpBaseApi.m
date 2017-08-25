@@ -63,7 +63,9 @@
 
 - (void)processDataWithProcessor:(id)processor
 {
-    
+    if ([processor respondsToSelector:@selector(process:data:)]) {
+        [processor process:self data:self.responseData];
+    }
 }
 
 #pragma mark - private method
