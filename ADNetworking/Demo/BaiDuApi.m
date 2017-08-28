@@ -17,7 +17,17 @@
 
 - (NSString *)requestHost
 {
-    return @"http://www.baidu.com";
+    return @"http://www.andy1991.cn";
+}
+
+- (NSString *)uri
+{
+    return @"/demo/adselect.php";
+}
+
+- (NSDictionary *)parameters
+{
+    return @{@"name":@"Lee", @"age":@(18)};
 }
 
 @end

@@ -12,10 +12,11 @@
 #import <objc/runtime.h>
 #import <objc/message.h>
 
-@interface ViewController ()<ADHttpBaseApiCallBackDelegate>
+@interface ViewController ()<ADHttpBaseApiCallBackDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) BaiDuApi *api;
 @property (nonatomic, strong) BaiduApiProcessor *processor;
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -30,22 +31,31 @@
     [self.api loadData];
     self.processor = [[BaiduApiProcessor alloc] init];
     
-//    unsigned int i = 0;
-//    Method *methodList = class_copyMethodList(objc_getMetaClass("Animal"), &i);
-//    for (int j = 0; j < i; j++) {
-//        NSLog(@"----%@", NSStringFromSelector(method_getName(methodList[j])));
-//    }
+    self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
 }
 
 - (void)apiRequestCallbackDidSuccess:(ADHttpBaseApi *)api
 {
     [api processDataWithProcessor:self.processor];
+    [self.tableView reloadData];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.processor.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    NSDictionary *dict = self.processor.dataSource[indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"%@-%@-%@", dict[@"ID"], dict[@"NAME"], dict[@"AGE"]];
+    
+    return cell;
 }
 
 

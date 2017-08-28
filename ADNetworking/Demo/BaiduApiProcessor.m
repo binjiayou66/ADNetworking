@@ -12,7 +12,16 @@
 
 - (void)process:(ADHttpBaseApi *)api data:(NSDictionary *)data
 {
-    
+    NSLog(@"--- %@", data);
+    self.dataSource.array = data[@"DATA"];
+}
+
+- (NSMutableArray *)dataSource
+{
+    if (!_dataSource) {
+        _dataSource = [[NSMutableArray alloc] init];
+    }
+    return _dataSource;
 }
 
 @end

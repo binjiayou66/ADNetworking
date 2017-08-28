@@ -34,7 +34,15 @@
 
 - (void)parseResponseData:(NSData *)responseData
 {
-    
+    NSError *error = nil;
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:responseData options:NSJSONReadingMutableLeaves error:&error];
+    if (error) {
+        _status = [self statusWithError:error];
+        _content = error.userInfo;
+        return;
+    }
+    _status = ADURLResponseStatusSuccess;
+    _content = dict;
 }
 
 - (NSInteger)statusWithError:(NSError *)error
