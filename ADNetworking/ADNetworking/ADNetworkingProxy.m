@@ -96,6 +96,7 @@
     return ++self.requestID;
 }
 
+#warning - 此处可配置request头部信息
 - (NSURLRequest *)generateDataRequestWithApi:(ADHttpBaseApi *)api
 {
     // Request基本配置，url、method、parameters

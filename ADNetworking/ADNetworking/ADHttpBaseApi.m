@@ -29,9 +29,9 @@
 
 #pragma mark - ADHttpBaseApiDataSource
 
+#warning - 此处可配置默认api属性
 - (NSDictionary *)parameters { return @{}; }
 - (NSString *)uri { return @""; }
-// 此处可配置默认host
 - (NSString *)requestHost { return @""; }
 - (ADHttpRequestType)requestMethod { return ADHttpRequestTypePost; }
 - (NSTimeInterval)requestTimeOutInterval { return 15; }

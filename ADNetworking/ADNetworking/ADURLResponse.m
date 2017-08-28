@@ -32,6 +32,7 @@
 
 #pragma mark - private method
 
+#warning - 此处可进行符合公司请求返回的通用标准格式解析
 - (void)parseResponseData:(NSData *)responseData
 {
     NSError *error = nil;
